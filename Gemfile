@@ -15,6 +15,7 @@ gem "gchartrb",        "0.8",   :require_as => "google_chart"
 gem "ddollar-pacecar", "1.1.6", :require_as => "pacecar"
 gem "net-scp",         "1.0.2"
 gem "rack-maintenance", "0.3.0", :require_as => "rack/maintenance"
+gem "gravtastic",      "2.1.3"
 
 only :test do
   gem "shoulda",      "2.10.2"
