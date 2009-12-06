@@ -9,6 +9,7 @@
         :method => :put, :confirm => "Are you sure? This cannot be undone." %></p>
         
 <% form_for @user, :url => profile_url do |form| %>
+  <%= form.error_messages %>
   <div class="text_field">
     <%= form.label :email, 'Email Address' %>
     <%= form.text_field :email %>
