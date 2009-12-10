@@ -68,6 +68,9 @@
 
       <%= render :partial => "rubygems/dependencies", :locals => { :dependencies => @latest_version.dependencies.runtime } %>
       <%= render :partial => "rubygems/dependencies", :locals => { :dependencies => @latest_version.dependencies.development } %>
+      
+      <%= render :partial => "rubygems/dependers", :locals => { :dependers => @rubygem.dependencies.runtime } %>
+      <%= render :partial => "rubygems/dependers", :locals => { :dependers => @rubygem.dependencies.development } %>
     </div>
   </div>
 <% end %>

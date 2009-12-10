@@ -13,7 +13,8 @@ class Rubygem < ActiveRecord::Base
     end
   end
   has_one :linkset, :dependent => :destroy
-
+  has_many :dependencies
+  
   validates_presence_of :name
   validates_uniqueness_of :name
 

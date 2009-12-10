@@ -1,0 +1,12 @@
+<% if dependers.present? %>
+  <div class="dependers" id="<%= dependers.first.scope %>_dependers">
+    <h5><%= dependers.first.scope.titleize %> Dependender</h5>
+    <ol>
+    <% dependers.each do |depender| %>
+      <li>
+        <%= link_to "<strong>#{depender.version.rubygem.name}</strong>", depender.version.rubygem %>
+      </li>
+    <% end %>
+    </ol>
+  </div>
+<% end %>
